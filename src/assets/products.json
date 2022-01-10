@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tortas",
+    "stock": {
+      "0": {
+        "name": "Torta de zanahoria",
+        "detail": "Deliciosa Torta de zanahoria.",
+        "qty": 0
+      },
+      "1": {
+        "name": "Torta de naranja & semillas de amapola",
+        "detail": "DeliciosaTorta de naranja & semillas de amapola.",
+        "qty": 0
+      },
+      "2": {
+        "name": "Torta de queso",
+        "detail": "Deliciosa Torta de queso.",
+        "qty": 0
+      },
+      "3": {
+        "name": "Torta de banano & arándanos",
+        "detail": "Deliciosa Torta de banano & arándanos.",
+        "qty": 0
+      }
+    }
+  },
+  {
+    "id": "quillos",
+    "stock": {
+      "0": {
+        "name": "Quillos de queso",
+        "detail": "Deliciosos quillos de queso.",
+        "qty": 0
+      },
+      "1": {
+        "name": "Quillos de pollo",
+        "detail": "Deliciosos quillos de pollo.",
+        "qty": 0
+      },
+      "2": {
+        "name": "Quillos de carne",
+        "detail": "Deliciosos quillos de carne.",
+        "qty": 0
+      },
+      "3": {
+        "name": "Quillos de arequipe",
+        "detail": "Deliciosos quillos de arequipe.",
+        "qty": 0
+      }
+    }
+  },
+  {
+    "id": "galletas",
+    "stock": {
+      "0": {
+        "name": "Galletas de avena",
+        "detail": "Deliciosas Galletas de avena.",
+        "qty": 0
+      },
+      "1": {
+        "name": "Galletas de frutos secos & uvas",
+        "detail": "Deliciosas Galletas de frutos secos & uvas.",
+        "qty": 0
+      },
+      "2": {
+        "name": "Galletas de arándanos & pistachos",
+        "detail": "Deliciosas Galletas de arándanos & pistachos.",
+        "qty": 0
+      }
+    }
+  },
+  {
+    "id": "panes",
+    "stock": {
+      "0": {
+        "name": "Pan brioche",
+        "detail": "Deliciosos Pan brioche.",
+        "qty": 0
+      },
+      "1": {
+        "name": "Pan de ciruelas & frutos",
+        "detail": "Delicioso pan de ciruelas & frutos.",
+        "qty": 0
+      },
+      "2": {
+        "name": "Pan de maíz",
+        "detail": "Delicioso pan de maíz.",
+        "qty": 0
+      }
+    }
+  }
+]
