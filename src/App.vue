@@ -15,7 +15,15 @@ export default {
 :root {
   --blue-pastel: #2a5865;
   --soft-blue-pastel: #90bdc2;
-  --pink-pastel: #f26363;
-  --soft-pink-pastel: #d59f9f;
+  --pink-pastel: #dbb4ad;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pink-pastel);
 }
 </style>

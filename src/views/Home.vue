@@ -1,28 +1,30 @@
 <template>
-  <main>
-    <section>Welcome</section>
-    <section v-for="category in ProductData" :key="category.id">
-      <section v-for="product in category.stock" :key="product.name">
-        <product-card :product="product" />
-      </section>
-    </section>
+  <main class="main-container">
+    <div class="welcome w-full h-screen">asd</div>
+    <products-section />
   </main>
 </template>
 
 <script>
-import ProductCard from "@/components/ProductCard.vue";
+import ProductsSection from "@/components/ProductsSection.vue";
 import ShopingCart from "@/components/ShopingCart.vue";
-import ProductData from "@/assets/products.json";
 export default {
   name: "Home",
   components: {
-    ProductCard,
+    ProductsSection,
     ShopingCart,
-  },
-  data() {
-    return {
-      ProductData,
-    };
   },
 };
 </script>
+<style>
+.main-container {
+  flex-basis: 50%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  scroll-snap-type: y mandatory;
+}
+.welcome {
+  scroll-snap-align: start;
+}
+</style>
