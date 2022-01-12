@@ -1,45 +1,23 @@
 [
   {
-    "id": "tortas",
-    "stock": {
-      "0": {
-        "name": "Torta de zanahoria",
-        "detail": "Deliciosa Torta de zanahoria.",
-        "qty": 0
-      },
-      "1": {
-        "name": "Torta de naranja & semillas de amapola",
-        "detail": "DeliciosaTorta de naranja & semillas de amapola.",
-        "qty": 0
-      },
-      "2": {
-        "name": "Torta de queso",
-        "detail": "Deliciosa Torta de queso.",
-        "qty": 0
-      }
-    }
-  },
-  {
     "id": "quillos",
     "stock": {
       "0": {
-        "name": "Torta de zanahoria",
-        "detail": "Deliciosa Torta de zanahoria.",
+        "name": "Quillos de pollo",
+        "detail": "Deliciosos quillos de pollo.",
+        "img": "https://drive.google.com/file/d/1EldE6_O9wL8TfEDahKt5ZZ4H1rEBjFjD/view?usp=sharing",
         "qty": 0
       },
       "1": {
-        "name": "Torta de naranja & semillas de amapola",
-        "detail": "DeliciosaTorta de naranja & semillas de amapola.",
+        "name": "Quillos de carne",
+        "detail": "Deliciosos quillos de carne.",
+        "img": "quillos_de_arequipe.png",
         "qty": 0
       },
       "2": {
-        "name": "Torta de queso",
-        "detail": "Deliciosa Torta de queso.",
-        "qty": 0
-      },
-      "3": {
-        "name": "Torta de queso",
-        "detail": "Deliciosa Torta de queso.",
+        "name": "Quillos de arequipe",
+        "detail": "Deliciosos quillos de arequipe.",
+        "img": "quillos_de_arequipe.png",
         "qty": 0
       }
     }

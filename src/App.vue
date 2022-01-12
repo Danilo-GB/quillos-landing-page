@@ -12,6 +12,8 @@ export default {
 };
 </script>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
 :root {
   --blue-pastel: #2a5865;
   --soft-blue-pastel: #90bdc2;
@@ -21,6 +23,7 @@ export default {
 ::before,
 ::after {
   box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
 }
 
 body {

@@ -1,71 +1,83 @@
 [
   {
+    "id": "quillos",
+    "stock": {
+      "0": {
+        "name": "Quillos de queso",
+        "detail": "Deliciosos quillos de queso para disfrutar tu dia, ¡pidelos en paquetes de 12 o 15!.",
+        "saleQuantity": 12,
+        "price": 15000
+      },
+      "1": {
+        "name": "Quillos de pollo",
+        "detail": "Deliciosos quillos de pollo para disfrutar tu dia, ¡pidelos en paquetes de 12 o 15!.",
+        "saleQuantity": 12,
+        "price": 15000
+      },
+      "2": {
+        "name": "Quillos de carne",
+        "detail": "Deliciosos quillos de carne para disfrutar tu dia, ¡pidelos en paquetes de 12 o 15!.",
+        "saleQuantity": 12,
+        "price": 15000
+      },
+      "3": {
+        "name": "Quillos de arequipe",
+        "detail": "Deliciosos quillos de arequipe para disfrutar tu dia, ¡pidelos en paquetes de 12 o 15!.",
+        "saleQuantity": 12,
+        "price": 15000
+      }
+    }
+  },
+  {
     "id": "tortas",
     "stock": {
       "0": {
         "name": "Torta de zanahoria",
         "detail": "Deliciosa Torta de zanahoria.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "1": {
         "name": "Torta de naranja & semillas de amapola",
         "detail": "DeliciosaTorta de naranja & semillas de amapola.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "2": {
         "name": "Torta de queso",
         "detail": "Deliciosa Torta de queso.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "3": {
-        "name": "Torta de banano & arándanos",
-        "detail": "Deliciosa Torta de banano & arándanos.",
-        "qty": 0
+        "name": "Torta de banano & arandanos",
+        "detail": "Deliciosa Torta de banano & arandanos.",
+        "saleQuantity": 1,
+        "price": 1000
       }
     }
   },
-  {
-    "id": "quillos",
-    "stock": {
-      "0": {
-        "name": "Quillos de queso",
-        "detail": "Deliciosos quillos de queso.",
-        "qty": 0
-      },
-      "1": {
-        "name": "Quillos de pollo",
-        "detail": "Deliciosos quillos de pollo.",
-        "qty": 0
-      },
-      "2": {
-        "name": "Quillos de carne",
-        "detail": "Deliciosos quillos de carne.",
-        "qty": 0
-      },
-      "3": {
-        "name": "Quillos de arequipe",
-        "detail": "Deliciosos quillos de arequipe.",
-        "qty": 0
-      }
-    }
-  },
+
   {
     "id": "galletas",
     "stock": {
       "0": {
-        "name": "Galletas de avena",
+        "name": "Avena",
         "detail": "Deliciosas Galletas de avena.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "1": {
-        "name": "Galletas de frutos secos & uvas",
+        "name": "Frutos secos & uvas",
         "detail": "Deliciosas Galletas de frutos secos & uvas.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "2": {
-        "name": "Galletas de arándanos & pistachos",
-        "detail": "Deliciosas Galletas de arándanos & pistachos.",
-        "qty": 0
+        "name": "Arandanos & pistachos",
+        "detail": "Deliciosas Galletas de arandanos & pistachos.",
+        "saleQuantity": 1,
+        "price": 1000
       }
     }
   },
@@ -75,17 +87,20 @@
       "0": {
         "name": "Pan brioche",
         "detail": "Deliciosos Pan brioche.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "1": {
         "name": "Pan de ciruelas & frutos",
         "detail": "Delicioso pan de ciruelas & frutos.",
-        "qty": 0
+        "saleQuantity": 1,
+        "price": 1000
       },
       "2": {
-        "name": "Pan de maíz",
-        "detail": "Delicioso pan de maíz.",
-        "qty": 0
+        "name": "Pan de maiz",
+        "detail": "Delicioso pan de maiz.",
+        "saleQuantity": 1,
+        "price": 1000
       }
     }
   }
