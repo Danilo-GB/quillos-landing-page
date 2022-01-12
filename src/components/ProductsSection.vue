@@ -6,7 +6,8 @@
       class="category-container w-full h-auto md:h-screen relative flex flex-row flex-wrap gap-3 justify-evenly items-center"
     >
       <div
-        class="absolute z-10 w-full text-center md:text-right left-0 lg:top-6 lg:pr-6 text-3xl lg:text-7xl font-bold text-white"
+        :id="category.id"
+        class="absolute z-20 w-full text-center lg:w-auto right-0 lg:top-0 lg:pr-6 text-3xl lg:text-7xl font-bold text-white"
       >
         {{ category.id.toUpperCase() }}!
       </div>

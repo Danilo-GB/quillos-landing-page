@@ -1,4 +1,5 @@
 <template>
+  <q-header />
   <main class="main-container">
     <welcome />
     <products-section />
@@ -6,15 +7,17 @@
 </template>
 
 <script>
+import QHeader from "@/components/Header.vue";
 import Welcome from "@/components/Welcome.vue";
 import ProductsSection from "@/components/ProductsSection.vue";
-import ShopingCart from "@/components/ShopingCart.vue";
+import ShoppingCart from "@/components/ShoppingCart.vue";
 export default {
   name: "Home",
   components: {
+    QHeader,
     Welcome,
     ProductsSection,
-    ShopingCart,
+    ShoppingCart,
   },
 };
 </script>
@@ -25,6 +28,7 @@ export default {
     max-height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
 }
 </style>
