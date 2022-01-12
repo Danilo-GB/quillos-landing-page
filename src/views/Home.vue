@@ -19,10 +19,12 @@ export default {
 };
 </script>
 <style>
-.main-container {
-  flex-basis: 50%;
-  max-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+@media (min-width: 1000px) {
+  .main-container {
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
 }
 </style>

@@ -17,7 +17,7 @@
           <button @click="addSaleQuantityToCart">+</button>
         </div>
 
-        <div class="detail">
+        <div class="detail mt-2">
           ${{ product.price }}x{{ product.saleQuantity }}
         </div>
       </div>
