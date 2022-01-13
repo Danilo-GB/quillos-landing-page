@@ -94,10 +94,6 @@
       <img src="@/assets/products/quillos-arequipe.png" alt="Loading..." />
       <img src="@/assets/products/quillos-pollo.png" alt="Loading..." />
       <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
-    </div>
-
-    <!-- split quillo -->
-    <div class="split-quillo">
       <img src="@/assets/products/quillo-split.png" alt="Loading..." />
     </div>
   </div>
@@ -155,12 +151,7 @@ export default {
   object-fit: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
-.split-quillo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.split-quillo img {
+.dishes img:nth-child(4) {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -170,6 +161,7 @@ export default {
   background-size: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
+
 .section-circle {
   position: absolute;
   top: 0;

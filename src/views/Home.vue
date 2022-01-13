@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import QHeader from "@/components/Header.vue";
+import QHeader from "@/components/QHeader.vue";
 import Welcome from "@/components/Welcome.vue";
 import ProductsSection from "@/components/ProductsSection.vue";
 import ProductData from "@/assets/products.json";
