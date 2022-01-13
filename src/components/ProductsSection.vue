@@ -1,35 +1,19 @@
 <template>
-  <div class="products-container relative">
+  <div class="products-container">
+    <!-- Category section -->
     <div
       v-for="category in ProductData"
       :key="category.id"
+      :id="category.id"
       class="category-container w-full h-auto md:h-screen relative flex flex-row flex-wrap gap-3 justify-evenly items-center"
     >
-      <div
-        :id="category.id"
-        class="absolute z-20 w-full text-center lg:w-auto right-0 lg:top-0 lg:pr-6 text-3xl lg:text-7xl font-bold text-white"
-      >
-        {{ category.id.toUpperCase() }}!
+      <!-- Left circle -->
+      <div class="section-circle">
+        <li></li>
       </div>
-      <div class="absolute z-0 left-0">
-        <svg
-          viewBox="55 0 120 120"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="var(--blue-pastel)"
-          class="hidden lg:block"
-        >
-          <circle cx="60" cy="60" r="50" /></svg
-        ><svg
-          viewBox="0 0 120 120"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="var(--blue-pastel)"
-          class="block lg:hidden"
-        >
-          <circle cx="60" cy="60" r="50" />
-        </svg>
-      </div>
+
+      <quillos />
+      <!-- Individual product section -->
       <div
         v-for="product in category.stock"
         :key="product.name"
@@ -42,31 +26,51 @@
 </template>
 
 <script>
-import ProductData from "@/assets/products.json";
 import ProductCard from "@/components/ProductCard.vue";
+import Quillos from "@/components/Quillos.vue";
 export default {
+  props: {
+    ProductData: {
+      type: Object,
+      default: {},
+    },
+  },
   components: {
     ProductCard,
-  },
-  data() {
-    return {
-      ProductData,
-    };
+    Quillos,
   },
 };
 </script>
-<style>
+<style scoped>
 .product-card {
   width: 200px;
   height: 330px;
 }
-@media (min-width: 768px) {
-  .category-container {
-    scroll-snap-align: start;
-  }
-  .product-card {
-    width: 280px;
-    height: 450px;
-  }
+.category-container {
+  scroll-snap-align: start;
+}
+.product-card {
+  width: 280px;
+  height: 450px;
+}
+.section-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.section-circle li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 50% 50% 0;
+  transform: scale(2) translateX(-30%);
+
+  background-color: var(--blue-pastel);
 }
 </style>

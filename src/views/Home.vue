@@ -2,7 +2,7 @@
   <q-header />
   <main class="main-container">
     <welcome />
-    <products-section />
+    <products-section :ProductData="ProductData" />
   </main>
 </template>
 
@@ -10,22 +10,29 @@
 import QHeader from "@/components/Header.vue";
 import Welcome from "@/components/Welcome.vue";
 import ProductsSection from "@/components/ProductsSection.vue";
-import ShoppingCart from "@/components/ShoppingCart.vue";
+import ProductData from "@/assets/products.json";
 export default {
   name: "Home",
   components: {
     QHeader,
     Welcome,
     ProductsSection,
-    ShoppingCart,
+  },
+  data() {
+    return {
+      ProductData,
+    };
   },
 };
 </script>
 <style>
+.main-container {
+  position: relative;
+  max-height: 100vh;
+}
 @media (min-width: 1000px) {
   .main-container {
     flex-basis: 50%;
-    max-height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
