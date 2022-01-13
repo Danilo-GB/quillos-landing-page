@@ -1,6 +1,6 @@
 <template>
   <div
-    class="shop-header hidden md:flex flex-row justify-between items-center gap-10 w-full h-16 px-10 text-white text-xl"
+    class="shop-header md:flex flex-row justify-between items-center gap-10 w-full h-16 px-10 text-white text-xl"
   >
     <div>
       <a href="#welcome">

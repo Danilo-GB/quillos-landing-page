@@ -91,13 +91,13 @@
     </div>
     <!-- Rigth dishes -->
     <ul class="dishes">
-      <li></li>
-      <li></li>
-      <li></li>
+      <img src="@/assets/products/quillos_de_arequipe.png" alt="Loading..." />
+      <img src="@/assets/products/quillos_de_pollo.png" alt="Loading..." />
+      <img src="@/assets/products/quillos_de_carne.png" alt="Loading..." />
     </ul>
     <!-- split quillo -->
     <ul class="split-quillo">
-      <li></li>
+      <img src="@/assets/products/quillo-split.png" alt="" />
     </ul>
   </div>
 </template>
@@ -126,34 +126,32 @@ export default {
   width: 100%;
   height: 100%;
 }
-.dishes li:nth-child(1) {
+.dishes img:nth-child(1) {
   position: absolute;
   top: -150px;
   left: 45%;
   width: 400px;
   height: 400px;
-  background-image: url("../assets/products/quillos_de_arequipe.png");
-  background-size: cover;
+  object-fit: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
-.dishes li:nth-child(2) {
+.dishes img:nth-child(2) {
   position: absolute;
   top: calc(50% - 270px);
   left: 50%;
   width: 500px;
   height: 500px;
-  background-image: url("../assets/products/quillos_de_pollo.png");
-  background-size: cover;
+
+  object-fit: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
-.dishes li:nth-child(3) {
+.dishes img:nth-child(3) {
   position: absolute;
   bottom: -150px;
   left: 45%;
   width: 400px;
   height: 400px;
-  background-image: url("../assets/products/quillos_de_carne.png");
-  background-size: cover;
+  object-fit: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
 .split-quillo {
@@ -161,14 +159,13 @@ export default {
   width: 100%;
   height: 100%;
 }
-.split-quillo li:nth-child(1) {
+.split-quillo img {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 500px;
   height: 500px;
   opacity: 50%;
-  background-image: url("../assets/products/quillo-split.png");
   background-size: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
