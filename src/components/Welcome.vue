@@ -154,7 +154,7 @@ export default {
 .dishes img:nth-child(4) {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 500px;
   height: 500px;
   opacity: 50%;
