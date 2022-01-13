@@ -111,6 +111,6 @@ export default {
   top: 0;
   z-index: 1;
   background-color: var(--soft-blue-pastel);
-  opacity: 90%;
+  opacity: 0.9;
 }
 </style>
