@@ -91,9 +91,9 @@
     </div>
     <!-- Rigth dishes -->
     <ul class="dishes">
-      <img src="@/assets/products/quillos_de_arequipe.png" alt="Loading..." />
-      <img src="@/assets/products/quillos_de_pollo.png" alt="Loading..." />
-      <img src="@/assets/products/quillos_de_carne.png" alt="Loading..." />
+      <img src="@/assets/products/quillos-arequipe.png" alt="Loading..." />
+      <img src="@/assets/products/quillos-pollo.png" alt="Loading..." />
+      <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
     </ul>
     <!-- split quillo -->
     <ul class="split-quillo">

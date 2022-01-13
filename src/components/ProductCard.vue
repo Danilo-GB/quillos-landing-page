@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white h-full w-full rounded-full px-10 py-2 relative">
     <img
-      src="@/assets/products/quillos_de_arequipe.png"
+      src="@/assets/products/quillos-arequipe.png"
       width="300"
       height="300"
     />
