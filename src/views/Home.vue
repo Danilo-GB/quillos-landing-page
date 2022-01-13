@@ -1,6 +1,6 @@
 <template>
-  <q-header />
   <main class="main-container">
+    <q-header />
     <welcome />
     <products-section :ProductData="ProductData" />
   </main>

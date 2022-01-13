@@ -90,15 +90,15 @@
       <span class="block text-right text-3xl">BOCADITOS</span>
     </div>
     <!-- Rigth dishes -->
-    <ul class="dishes">
-      <img src="@/assets/products/quillos_de_arequipe.png" alt="Loading..." />
-      <img src="@/assets/products/quillos_de_pollo.png" alt="Loading..." />
-      <img src="@/assets/products/quillos_de_carne.png" alt="Loading..." />
-    </ul>
+    <div class="dishes">
+      <img src="@/assets/products/quillos-arequipe.png" alt="Loading..." />
+      <img src="@/assets/products/quillos-pollo.png" alt="Loading..." />
+      <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
+    </div>
     <!-- split quillo -->
-    <ul class="split-quillo">
-      <img src="@/assets/products/quillo-split.png" alt="" />
-    </ul>
+    <div class="split-quillo">
+      <img src="@/assets/products/quillo-split.png" alt="Loading..." />
+    </div>
   </div>
 </template>
 
@@ -111,7 +111,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .welcome {
   scroll-snap-align: start;
 }

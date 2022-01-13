@@ -109,7 +109,7 @@ export default {
 .shop-header {
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 1;
   background-color: var(--soft-blue-pastel);
   opacity: 90%;
 }
