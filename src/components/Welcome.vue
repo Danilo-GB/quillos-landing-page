@@ -94,7 +94,7 @@
       <img src="@/assets/products/quillos-arequipe.png" alt="Loading..." />
       <img src="@/assets/products/quillos-pollo.png" alt="Loading..." />
       <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
-      <img src="@/assets/products/quillo-split.png" alt="Loading..." />
+      <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
     </div>
   </div>
 </template>
