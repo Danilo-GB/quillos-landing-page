@@ -95,6 +95,7 @@
       <img src="@/assets/products/quillos-pollo.png" alt="Loading..." />
       <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
     </div>
+
     <!-- split quillo -->
     <div class="split-quillo">
       <img src="@/assets/products/quillo-split.png" alt="Loading..." />
