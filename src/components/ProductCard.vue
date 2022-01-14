@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import bus from "@/services/EventBus";
 export default {
   props: {
     product: {
@@ -41,9 +42,22 @@ export default {
   methods: {
     addSaleQuantityToCart() {
       this.quantityToBuy += this.product.saleQuantity;
+      this.updateCart();
     },
     removeSaleQuantityToCart() {
-      this.quantityToBuy -= this.product.saleQuantity;
+      if (this.quantityToBuy > 0) {
+        this.quantityToBuy -= this.product.saleQuantity;
+        this.updateCart();
+      }
+    },
+    updateCart() {
+      bus.fire(
+        "updateCart",
+        this.product.name,
+        this.product.price,
+        this.quantityToBuy,
+        this.product.saleQuantity
+      );
     },
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="shop-header md:flex flex-row justify-between items-center gap-10 w-full h-16 px-10 text-white text-xl"
+    class="shop-header flex flex-row justify-between items-center gap-10 w-full h-16 px-10 text-white text-xl"
   >
     <div>
       <a href="#welcome">
@@ -84,11 +84,13 @@
         </svg>
       </a>
     </div>
-    <div class="flex flex-row justify-evenly w-1/2">
-      <a href="#quillos">QUILLOS</a>
-      <a href="#tortas">TORTAS</a>
-      <a href="#galletas">GALLETAS</a>
-      <a href="#panes">PANES</a>
+    <div class="hidden md:flex flex-row justify-evenly w-1/2 font-bold">
+      <a
+        v-for="category in ProductData"
+        :key="category.id"
+        :href="`#${category.id}`"
+        >{{ category.id.toUpperCase() }}</a
+      >
     </div>
     <div>
       <shopping-cart />
@@ -99,6 +101,12 @@
 <script>
 import ShoppingCart from "@/components/ShoppingCart.vue";
 export default {
+  props: {
+    ProductData: {
+      type: Object,
+      default: {},
+    },
+  },
   components: {
     ShoppingCart,
   },

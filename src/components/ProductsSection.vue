@@ -17,7 +17,7 @@
       <div
         v-for="product in category.stock"
         :key="product.name"
-        class="product-card my-4 md:my:0 z-10"
+        class="product-card my-4 md:my:0"
       >
         <product-card :product="product" />
       </div>
