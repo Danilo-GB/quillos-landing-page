@@ -11,8 +11,8 @@
       <div class="section-circle">
         <li></li>
       </div>
-
-      <quillos />
+      <!-- Floating quillos -->
+      <quillos class="hidden md:block" />
       <!-- Individual product section -->
       <div
         v-for="product in category.stock"
@@ -42,16 +42,13 @@ export default {
 };
 </script>
 <style scoped>
-.product-card {
-  width: 200px;
-  height: 330px;
-}
 .category-container {
   scroll-snap-align: start;
 }
+
 .product-card {
-  width: 280px;
-  height: 450px;
+  width: 200px;
+  height: 330px;
 }
 .section-circle {
   position: absolute;
@@ -59,18 +56,27 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: -1;
 }
+
 .section-circle li {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
   border-radius: 0 50% 50% 0;
   transform: scale(2) translateX(-30%);
-
   background-color: var(--blue-pastel);
+}
+@media (min-width: 768px) {
+  .section-circle li {
+    width: 50%;
+    height: 100%;
+  }
+  .product-card {
+    width: 280px;
+    height: 450px;
+  }
 }
 </style>

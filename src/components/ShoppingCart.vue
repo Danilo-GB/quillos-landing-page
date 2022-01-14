@@ -62,7 +62,28 @@
       <a
         :href="`https://api.whatsapp.com/send?phone=573143856294&text=${msgToWhatsapp}`"
         target="blank"
-        class="mt-5 p-3 text-center border-2 border-white md:w-full w-4/5 mx-auto rounded-full bg-white text-green-700"
+        class="hidden md:block mt-5 p-3 text-center border-2 border-white md:w-full w-4/5 mx-auto rounded-full bg-white text-green-700"
+      >
+        <svg
+          class="w-6 h-6 inline transform rotate-45 -translate-y-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+          ></path>
+        </svg>
+        Pedir al whatsapp
+      </a>
+      <a
+        :href="`whatsapp://send?phone=573143856294&text=${msgToWhatsapp}`"
+        target="blank"
+        class="md:hidden block mt-5 p-3 text-center border-2 border-white md:w-full w-4/5 mx-auto rounded-full bg-white text-green-700"
       >
         <svg
           class="w-6 h-6 inline transform rotate-45 -translate-y-1"
@@ -128,21 +149,23 @@ export default {
     msgToWhatsapp() {
       if (this.shoppingList.length > 0) {
         let productsList = "";
+
         for (let product in this.shoppingList) {
-          productsList += `%0Aproducto:%20${
-            this.shoppingList[product].name
-          }%20cantidad:%20${this.shoppingList[product].qty}%20precio:%20${
+          productsList += `%0A
+          producto: ${this.shoppingList[product].name}
+          cantidad: ${this.shoppingList[product].qty}
+          precio:
+          ${
             (this.shoppingList[product].qty /
               this.shoppingList[product].saleQuantity) *
             this.shoppingList[product].price
           }%0A`;
         }
         productsList += `---------total: ${this.totalPrice}---------`;
+
         return `Hola! ${this.user.name ? `soy ${this.user.name},` : ""} ${
-          this.user.address
-            ? `mi%20dirección%20es:%20${this.user.address},`
-            : ""
-        } me%20gustaría%20solicitar%20los%20siguientes%20productos:%0A${productsList} `;
+          this.user.address ? `mi dirección es: ${this.user.address},` : ""
+        } me gustaría solicitar los siguientes productos:%0A${productsList} `;
       } else {
         return "Hola, vengo de la página web de quillos! estoy interesado/a";
       }

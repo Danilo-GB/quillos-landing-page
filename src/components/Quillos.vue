@@ -1,5 +1,5 @@
 <template>
-  <ul class="circles">
+  <ul class="circles hidden md:block">
     <li></li>
     <li></li>
     <li></li>

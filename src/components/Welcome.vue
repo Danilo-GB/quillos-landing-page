@@ -7,7 +7,7 @@
     <!-- floating quillos -->
     <quillos />
     <!-- Main logo -->
-    <div class="main-logo">
+    <div class="main-logo w-3/4 md:w-2/6">
       <span class="block text-left text-3xl">Bienvenido a</span>
       <svg viewBox="0 0 1920 700" version="1.1" id="svg5">
         <g inkscape:groupmode="layer" id="layer2" inkscape:label="Capa 0">
@@ -91,9 +91,21 @@
     </div>
     <!-- Rigth dishes -->
     <div class="dishes">
-      <img src="@/assets/products/quillos-arequipe.png" alt="Loading..." />
-      <img src="@/assets/products/quillos-pollo.png" alt="Loading..." />
-      <img src="@/assets/products/quillos-carne.png" alt="Loading..." />
+      <img
+        class="hidden md:block"
+        src="@/assets/products/quillos-arequipe.png"
+        alt="Loading..."
+      />
+      <img
+        class="hidden md:block"
+        src="@/assets/products/quillos-pollo.png"
+        alt="Loading..."
+      />
+      <img
+        class="hidden md:block"
+        src="@/assets/products/quillos-carne.png"
+        alt="Loading..."
+      />
       <img src="@/assets/products/quillo-split.png" alt="Loading..." />
     </div>
   </div>
@@ -116,7 +128,6 @@ export default {
   position: absolute;
   top: 20%;
   left: 5%;
-  width: 30%;
 }
 .dishes {
   position: absolute;
@@ -135,7 +146,7 @@ export default {
 .dishes img:nth-child(2) {
   position: absolute;
   top: calc(50% - 270px);
-  left: 50%;
+  right: 50px;
   width: 500px;
   height: 500px;
 
@@ -155,8 +166,8 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 80%;
   opacity: 0.5;
   background-size: cover;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
@@ -175,11 +186,21 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 60%;
   border-radius: 0 50% 50% 0;
   transform: scale(2) translateX(-30%);
 
   background-color: #f5f5f5;
+}
+@media (min-width: 768px) {
+  .section-circle li {
+    width: 50%;
+    height: 100%;
+  }
+  .dishes img:nth-child(4) {
+    width: 40%;
+    height: 50%;
+  }
 }
 </style>
