@@ -16,7 +16,7 @@
     </svg>
   </div>
   <div
-    class="shopping-cart-card w-full md:w-2/6 absolute top-16 right-0 md:right-8 font-light"
+    class="shopping-cart-card w-full md:w-2/6 h-screen overflow-scroll absolute top-16 right-0 md:right-8 font-light"
     v-show="isShowing"
   >
     <div class="text-center text-3xl mb-4">Hoy es todo sobre ti</div>
@@ -58,7 +58,7 @@
         class="w-full text-black rounded-full px-4"
       />
     </div>
-    <div class="w-full flex flex-row justify-items-center">
+    <div class="w-full flex flex-row justify-items-center mb-4 z-10">
       <a
         :href="`https://api.whatsapp.com/send?phone=573143856294&text=${msgToWhatsapp}`"
         target="blank"
