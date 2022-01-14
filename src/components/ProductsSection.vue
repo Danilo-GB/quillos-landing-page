@@ -7,6 +7,7 @@
       :id="category.id"
       class="category-container w-full h-auto md:h-screen relative flex flex-row flex-wrap gap-3 justify-evenly items-center"
     >
+      <category-banner class="block md:hidden" :category="category.id" />
       <!-- Left circle -->
       <div class="section-circle">
         <li></li>
@@ -27,6 +28,7 @@
 
 <script>
 import ProductCard from "@/components/ProductCard.vue";
+import CategoryBanner from "@/components/CategoryBanner.vue";
 import Quillos from "@/components/Quillos.vue";
 export default {
   props: {
@@ -37,6 +39,7 @@ export default {
   },
   components: {
     ProductCard,
+    CategoryBanner,
     Quillos,
   },
 };

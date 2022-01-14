@@ -3,6 +3,7 @@
     <q-header :ProductData="ProductData" />
     <welcome />
     <products-section :ProductData="ProductData" />
+    <q-footer />
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import QHeader from "@/components/QHeader.vue";
 import Welcome from "@/components/Welcome.vue";
 import ProductsSection from "@/components/ProductsSection.vue";
+import QFooter from "@/components/QFooter.vue";
 import ProductData from "@/assets/products.json";
 export default {
   name: "Home",
@@ -17,6 +19,7 @@ export default {
     QHeader,
     Welcome,
     ProductsSection,
+    QFooter,
   },
   data() {
     return {
