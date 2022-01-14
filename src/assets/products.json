@@ -38,8 +38,8 @@
         "price": 1000
       },
       "1": {
-        "name": "Torta de naranja & semillas de amapola",
-        "detail": "DeliciosaTorta de naranja & semillas de amapola.",
+        "name": "Torta de naranja y semillas de amapola",
+        "detail": "DeliciosaTorta de naranja y semillas de amapola.",
         "saleQuantity": 1,
         "price": 1000
       },
@@ -50,8 +50,8 @@
         "price": 1000
       },
       "3": {
-        "name": "Torta de banano & arandanos",
-        "detail": "Deliciosa Torta de banano & arandanos.",
+        "name": "Torta de banano y arandanos",
+        "detail": "Deliciosa Torta de banano y arandanos.",
         "saleQuantity": 1,
         "price": 1000
       }
@@ -68,14 +68,14 @@
         "price": 1000
       },
       "1": {
-        "name": "Frutos secos & uvas",
-        "detail": "Deliciosas Galletas de frutos secos & uvas.",
+        "name": "Frutos secos y uvas",
+        "detail": "Deliciosas Galletas de frutos secos y uvas.",
         "saleQuantity": 1,
         "price": 1000
       },
       "2": {
-        "name": "Arandanos & pistachos",
-        "detail": "Deliciosas Galletas de arandanos & pistachos.",
+        "name": "Arandanos y pistachos",
+        "detail": "Deliciosas Galletas de arandanos y pistachos.",
         "saleQuantity": 1,
         "price": 1000
       }
@@ -91,8 +91,8 @@
         "price": 1000
       },
       "1": {
-        "name": "Pan de ciruelas & frutos",
-        "detail": "Delicioso pan de ciruelas & frutos.",
+        "name": "Pan de ciruelas y frutos",
+        "detail": "Delicioso pan de ciruelas y frutos.",
         "saleQuantity": 1,
         "price": 1000
       },

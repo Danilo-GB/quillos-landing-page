@@ -92,8 +92,6 @@ export default {
       isShowing: false,
       shoppingList: [],
       totalPrice: 0,
-      msgToWhatsapp:
-        "Hola, vengo de la página web de quillos! estoy interesado/a",
       user: {
         name: "",
         address: "",
@@ -124,31 +122,29 @@ export default {
             this.shoppingList[product].saleQuantity) *
           this.shoppingList[product].price;
       }
-      this.updateMsg();
     },
-    updateMsg() {
+  },
+  computed: {
+    msgToWhatsapp() {
       if (this.shoppingList.length > 0) {
         let productsList = "";
         for (let product in this.shoppingList) {
           productsList += `%0Aproducto:%20${
             this.shoppingList[product].name
-          }cantidad:%20${this.shoppingList[product].qty}%20precio:%20${
+          }%20cantidad:%20${this.shoppingList[product].qty}%20precio:%20${
             (this.shoppingList[product].qty /
               this.shoppingList[product].saleQuantity) *
             this.shoppingList[product].price
           }%0A`;
         }
         productsList += `---------total: ${this.totalPrice}---------`;
-        this.msgToWhatsapp = `Hola! ${
-          this.user.name ? `soy ${this.user.name},` : ""
-        } ${
+        return `Hola! ${this.user.name ? `soy ${this.user.name},` : ""} ${
           this.user.address
             ? `mi%20dirección%20es:%20${this.user.address},`
             : ""
-        }, me%20gustaría%20solicitar%20los%20siguientes%20productos:%0A${productsList} `;
+        } me%20gustaría%20solicitar%20los%20siguientes%20productos:%0A${productsList} `;
       } else {
-        this.msgToWhatsapp =
-          "Hola, vengo de la página web de quillos! estoy interesado/a";
+        return "Hola, vengo de la página web de quillos! estoy interesado/a";
       }
     },
   },
