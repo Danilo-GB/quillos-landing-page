@@ -167,9 +167,9 @@ export default {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 50%;
   opacity: 0.5;
-  background-size: cover;
+  background-size: contain;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
 }
 

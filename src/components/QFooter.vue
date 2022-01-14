@@ -1,6 +1,6 @@
 <template>
   <div
-    class="product-banner w-full h-24 text-white text-3xl text-center font-light flex flex-row items-center justify-between"
+    class="product-banner w-full h-24 text-white text-3xl px-6 text-center font-light flex flex-row items-center justify-between"
   >
     <!-- Main logo -->
     <div>
