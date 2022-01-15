@@ -7,9 +7,9 @@ Created as a personal project for my portfolio, enjoy!
 
 ## Features
 
--Store landing page with control functionality directly from a JSON file (Dynamic categories and products).
--Add and remove items from the shopping cart.
--Direct message to whatsapp web for computers and mobile whatsapp application with the complete selected list.
+- Store landing page with control functionality directly from a JSON file (Dynamic categories and products).
+- Add and remove items from the shopping cart.
+- Direct message to whatsapp web for computers and mobile whatsapp application with the complete selected list.
 
 ## Responsive
 
